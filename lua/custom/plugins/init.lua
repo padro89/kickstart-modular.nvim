@@ -2,4 +2,9 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+return {
+  require 'custom.plugins.r',
+  require 'custom.plugins.lsp',
+  require 'custom.plugins.formatter',
+  require 'custom.plugins.markdown',
+}

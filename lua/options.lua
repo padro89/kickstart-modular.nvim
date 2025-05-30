@@ -7,10 +7,10 @@
 vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
--- vim.opt.relativenumber = true
+vim.opt.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
-vim.opt.mouse = 'a'
+-- vim.opt.mouse = 'a' I set it down
 
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
@@ -66,4 +66,14 @@ vim.opt.scrolloff = 10
 -- See `:help 'confirm'`
 vim.opt.confirm = true
 
+-- ml4w default options
+vim.opt.showmatch = true
+vim.opt.ignorecase = true
+vim.opt.mouse = 'v'
+vim.opt.hlsearch = true
+vim.opt.wildmode = 'longest,list'
+
+vim.cmd [[
+  highlight Normal guibg=NONE ctermbg=NONE
+]]
 -- vim: ts=2 sts=2 sw=2 et
