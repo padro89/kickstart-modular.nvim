@@ -73,6 +73,11 @@ vim.opt.mouse = 'v'
 vim.opt.hlsearch = true
 vim.opt.wildmode = 'longest,list'
 
+-- disable inline diagnostic text (use floating or signs instead)
+vim.diagnostic.config {
+  virtual_text = false,
+}
+
 vim.cmd [[
   highlight Normal guibg=NONE ctermbg=NONE
 ]]
